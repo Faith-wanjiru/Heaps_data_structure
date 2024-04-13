@@ -1,0 +1,17 @@
+import heapq
+lists = [15,5,20,1,17,10,30]
+heapq.heapify(lists)
+print(lists)
+
+heapq.heappush(lists, 18)
+print(lists)
+
+heapq.heappop(lists)
+print(lists)
+
+smallest_values = heapq.nsmallest(2, lists)
+print(smallest_values)
+
+
+largest_values = heapq.nlargest(2, lists)
+print(largest_values)
